@@ -52,6 +52,10 @@ export const Card = styled.div<CardProps>`
         &.block-want-favorite{
             padding: .5rem;
             opacity: 0;
+
+            @media (max-width: 780px){
+                opacity: 1;
+            }
         }
     }
 
