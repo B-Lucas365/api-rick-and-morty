@@ -1,6 +1,5 @@
 import { Container } from "./style";
-import { BsGenderMale, BsGenderFemale } from 'react-icons/Bs';
-import { RiGenderlessLine } from "react-icons/Ri";
+import { TbGenderMale, TbGenderFemale, TbGenderNeutrois } from 'react-icons/Tb';
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Character } from "@/types/Character";
@@ -49,7 +48,7 @@ export const CardDetails = ({ characterId }: CharacterProps) => {
         <h3 className="title">{characterDetails.name}</h3>
         <div className="generous-details">
           <div className="generous">
-            {characterDetails.gender === 'Male' ? <BsGenderMale /> : characterDetails.gender === 'Female' ? <BsGenderFemale /> : <RiGenderlessLine />} {characterDetails.gender}
+            {characterDetails.gender === 'Male' ? <TbGenderMale /> : characterDetails.gender === 'Female' ? <TbGenderFemale /> : <TbGenderNeutrois />} {characterDetails.gender}
           </div>
           <span>-</span>
           <p>{characterDetails.species}</p>
