@@ -30,7 +30,7 @@ As tecnologias utilizadas no desenvolvimento deste projero foram:
 -- Next.js
 -- Typescript
 -- Styled-components
--- React-icons
+-- Material-Ui
 -- Local-Storage
 -- Axios
 

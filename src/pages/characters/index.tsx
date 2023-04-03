@@ -5,7 +5,9 @@ import { use, useEffect, useState } from "react";
 import { getCharacters } from "@/api/api";
 import { Character as CharacterTipes, Info as InfoTipes } from "@/types/Character";
 
-import {FiChevronRight, FiChevronLeft} from 'react-icons/fi'
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 import { CardDetails } from "@/components/CardDetails";
 import { Character } from "@/components/Character";
 import { Filter } from "@/components/Filter";
@@ -91,14 +93,14 @@ export default function Characters(){
                       onClick={() => setCurrentPage((prev) => prev - 1)}
                       disabled={currentPage === 1}
                     >
-                      <FiChevronLeft />
+                      <ArrowBackIosIcon sx={{ fontSize: 18 }} />
                     </button>
         
                     <button
                       onClick={() => setCurrentPage((prev) => prev + 1)}
                       disabled={currentPage === infoAPI.pages}
                     >
-                      <FiChevronRight />
+                      <ArrowForwardIosIcon sx={{ fontSize: 18 }} />
                     </button>
                   </div>
                 </div>

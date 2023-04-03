@@ -1,5 +1,9 @@
 import { Container } from "./style";
-import { TbGenderMale, TbGenderFemale, TbGenderNeutrois } from 'react-icons/Tb';
+
+import MaleIcon from '@mui/icons-material/Male';
+import FemaleIcon from '@mui/icons-material/Female';
+import TransgenderIcon from '@mui/icons-material/Transgender';
+
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Character } from "@/types/Character";
@@ -48,7 +52,7 @@ export const CardDetails = ({ characterId }: CharacterProps) => {
         <h3 className="title">{characterDetails.name}</h3>
         <div className="generous-details">
           <div className="generous">
-            {characterDetails.gender === 'Male' ? <TbGenderMale /> : characterDetails.gender === 'Female' ? <TbGenderFemale /> : <TbGenderNeutrois />} {characterDetails.gender}
+            {characterDetails.gender === 'Male' ? <MaleIcon /> : characterDetails.gender === 'Female' ? <FemaleIcon /> : <TransgenderIcon />} {characterDetails.gender}
           </div>
           <span>-</span>
           <p>{characterDetails.species}</p>
