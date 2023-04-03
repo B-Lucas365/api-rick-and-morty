@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: false,
   trailingSlash: true,
-  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js']
+  pageExtensions: ["pages/characters/style", "pages/episodes/style", "pages/favorites/styled", "pages/style"]
 }
 
 module.exports = nextConfig
