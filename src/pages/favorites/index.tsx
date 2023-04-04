@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 
 import { CardDetails } from "@/components/CardDetails";
-import { Container, FavoritesCharacters } from "./styled";
+import { Container, FavoritesCharacters } from "../../stylesPage/styledFavorites";
 
 import { useState, useEffect} from 'react'
 import { Character } from "@/components/Character";

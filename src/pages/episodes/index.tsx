@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header"
-import {CharactersThisEpisode, Container} from "./style"
+import {CharactersThisEpisode, Container} from "../../stylesPage/styleEpisodes"
 import { CardDetailsEpisode } from "@/components/CardDetailsEpisode"
 import {useState, useEffect} from "react"
 import { getEpisodes } from "@/api/api"

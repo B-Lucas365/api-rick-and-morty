@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
-import { Container } from "../style";
-import { AllCharacters, Content } from "./style";
+import { Container } from "../../stylesPage/styleCharacter";
+import { AllCharacters, Content } from "../../stylesPage/styleCharacter";
 import { use, useEffect, useState } from "react";
 import { getCharacters } from "@/api/api";
 import { Character as CharacterTipes, Info as InfoTipes } from "@/types/Character";

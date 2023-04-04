@@ -6,7 +6,7 @@ import { getManyCharacters, getEpsodes} from '@/api/api'
 
 import { Character as CharacterTypes, Episode as EpisodeTypes} from '@/types/Character'
 
-import {Container, ContentCharacters, ContentEpsodes} from "./style" 
+import {Container, ContentCharacters, ContentEpsodes} from "../stylesPage/styleIndex" 
 import { Episodes } from '@/components/Episodes'
 
 
